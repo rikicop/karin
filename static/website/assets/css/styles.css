@@ -172,7 +172,7 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: transparent;
 }
 
 /*===== HOME =====*/
@@ -287,7 +287,7 @@ img{
 
 
 
-/* ===== SKILLS =====*/
+/* ===== SKILLS/CARUSEL =====*/
 .skills__container{
     row-gap: 2rem;
 }
@@ -304,13 +304,8 @@ img{
     background-color: var(--white-color);
     border-radius: .25rem;
 }
-.skills__name:hover{
-    background-color: var(--first-color);
-    color: var(--white-color);
-}
-.skills__img img{
-    border-radius: .5rem;
-}
+
+
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
@@ -449,7 +444,7 @@ img{
         color: var(--white-color);
     }
     .active::after{
-        background-color: var(--white-color);
+        background-color: transparent;
     }
 
     .home__container{

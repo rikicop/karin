@@ -8,8 +8,12 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="{% static 'website/assets/css/styles.css' %}">
 
+        <link rel="stylesheet" href="{% static 'website/assets/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'website/assets/css/owl.theme.default.css' %}">
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== CARUSEL ===== -->
+        
 
         <title>{% block title %} Karin Peña {% endblock %}</title>
     </head>
@@ -76,5 +80,28 @@
 
 <!--===== MAIN JS =====-->
 <script src="{% static 'website/assets/js/main.js' %}"></script>
+
+<script src="{% static 'website/assets/js/jquery.js' %}"></script>
+<script src="{% static 'website/assets/js/owl.carousel.js' %}"></script>
+{% block javascript %}
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+</script>
+{% endblock %}
 </body>
 </html>
