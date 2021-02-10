@@ -249,6 +249,44 @@ img{
     color: var(--first-color);
 }
 
+.fcbw{
+    display: inline;
+} 
+.fcba{
+    display: none;
+}
+
+@media (max-width:500px){
+    .fcbw{
+        display: none;
+    }
+    .fcba{
+        display: inline;
+    }
+}
+
+.moreText{
+    display: none;
+}
+.read-more-btn{
+    /* display: block; */
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: .75rem 2.5rem;
+    margin-left: auto;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+}
+
+.about__text.show-more .moreText{
+    display: inline;
+}
+
+
+
 /* ===== SKILLS =====*/
 .skills__container{
     row-gap: 2rem;

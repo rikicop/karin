@@ -75,6 +75,16 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
+/*READ MORE*/
+const readMoreBtn = document.querySelector('.read-more-btn')
+const about__text = document.querySelector('.about__text');
 
-
+readMoreBtn.addEventListener('click', (e)=>{
+    about__text.classList.toggle('show-more');
+    if(readMoreBtn.innerText === 'Leer Más'){
+        readMoreBtn.innerText = 'Leer Menos';
+    }else{
+        readMoreBtn.innerText = 'Leer Más'; 
+    }
+})
 
