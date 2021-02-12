@@ -85,22 +85,24 @@
 <script src="{% static 'website/assets/js/owl.carousel.js' %}"></script>
 {% block javascript %}
 <script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
+    $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
         nav:true,
         responsive:{
             0:{
                 items:1
             },
             600:{
-                items:3
+                items:2
             },
             1000:{
-                items:5
+                items:3
             }
         }
-    })
+      });
 </script>
 {% endblock %}
 </body>
