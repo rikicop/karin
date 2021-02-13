@@ -207,7 +207,7 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    width: 285px;
 }
 
 /* ===== ABOUT =====*/
@@ -333,13 +333,20 @@ img{
     background: #fff;
   }
   .slider .card .img{
-    height: 70%;
-    width: 100%;
-  }
-  .slider .card .img img{
+   
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+  .slider .card .img img{
+    height: 50%;
+    width: 50%;
+    object-fit:contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    /* padding: 25px; */
   }
   .slider .card .content{
     padding: 10px 20px;
