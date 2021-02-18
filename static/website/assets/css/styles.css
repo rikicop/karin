@@ -412,10 +412,10 @@ img {
 }
 
 .slider .card .img img {
-    height: 50%;
-    width: 50%;
-    object-fit: contain;
-    display: block;
+    width: 220px; /* width of container */
+    height: 300px; /* height of container */
+    object-fit: cover;
+    /* border: 5px solid black; */
     margin-left: auto;
     margin-right: auto;
     /* padding: 25px; */
