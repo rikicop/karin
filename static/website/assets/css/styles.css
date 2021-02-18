@@ -99,9 +99,12 @@ a {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%;
     height: auto;
-    display: block;
+    display: block; */
+    width: 400px; /* width of container */
+    height: 400px; /* height of container */
+    object-fit: cover;
 }
 
 
@@ -508,7 +511,7 @@ img {
 }
 
 .portfolio__link-name {
-    color: var(--dark-color);
+    color: black;
 }
 
 
