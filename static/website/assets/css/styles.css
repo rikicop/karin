@@ -409,6 +409,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 }
 
 .slider .card .img img {
@@ -416,18 +417,23 @@ img {
     height: 300px; /* height of container */
     object-fit: cover;
     /* border: 5px solid black; */
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 25px; */
+    border-radius: 15px;
+    
+    
 }
 
 .slider .card .content {
     padding: 10px 20px;
+    text-align: center;
 }
 
 .card .content .title {
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
 }
 
 .card .content .sub-title {
@@ -435,6 +441,7 @@ img {
     font-weight: 600;
     color: #2a3b47;
     line-height: 20px;
+    text-align: center;
 }
 
 .card .content p {
