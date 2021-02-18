@@ -3,7 +3,7 @@
     <!--===== HOME =====-->
     <section class="home" id="home">
         <div class="home__container bd-grid"><br><br>
-            <h1 class="home__title"><span>HOLA</span></h1>
+            <h1 class="home__title"><span>Somos RentaHouse!!</span></h1>
             <img src="{% static 'website/assets/img/perfilo.png' %}" alt="">
             <!--  <div class="home__scroll">
                 <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Información</a>
@@ -19,19 +19,19 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="{% static 'website/assets/img/perfil.png' %}" alt="">
+                    <img src="{% static 'website/assets/img/renta.jpg' %}" alt="">
                 </div>
 
                 <div>
-                    <h2 class="about__subtitle">Mi nombre es Karin Peña</h2>
-                    <span class="about__profession">Agente Inmobiliaria</span>
+                    <h2 class="about__subtitle">Rentahouse Ciudad Ojeda Karin Peña y Asociados, C.A.</h2>
+                    <span class="about__profession">Agencia Inmobiliaria</span>
 
                     <span class="about__text">Rent a House es una empresa inmobiliaria fundada en 1969, desde entonces se ha dedicado a trabajar
                              incansablemente, hasta lograr formar la gran Organización que representamos en la actualidad.
-                             <h2 style="color:#5361FF">Visión</h2>  Lograr el mayor nivel de productividad por Franquiciado mediante la implementación de un modelo único y original de Rent A House. 
+                             <h2 style="color:#2a3b47">Visión</h2>  Lograr el mayor nivel de productividad por Franquiciado mediante la implementación de un modelo único y original de Rent A House. 
                             <span class="moreText">
-                             <h2 style="color:#5361FF" >Misión</h2> Prestar servicios inmobiliarios de excelente calidad en las regiones del país donde tengamos presencia, logrando un alto nivel de satisfacción a nuestros Franquiciados. 
-                             <h2 style="color:#5361FF">Valores</h2> 1.Honestidad 2.Transparencia 3. Profesionalismo 4.Constancia 5.Creatividad 6.Ética
+                             <h2 style="color:#2a3b47" >Misión</h2> Prestar servicios inmobiliarios de excelente calidad en las regiones del país donde tengamos presencia, logrando un alto nivel de satisfacción a nuestros Franquiciados. 
+                             <h2 style="color:#2a3b47">Valores</h2> 1.Honestidad 2.Transparencia 3. Profesionalismo 4.Constancia 5.Creatividad 6.Ética
                             </span>
                     </span><br><br>
                     <button class="read-more-btn">Leer Más</button>
@@ -92,13 +92,14 @@
     <section class="portfolio section" id="portfolio">
         <center>
             <h2 class="section-title">Galería</h2>
+            <h2> Compra-Venta Y Alquiler</h2><br>
 
             <div class="portfolio__container bd-grid">
                 {% for item in items %}
                 <div class="portfolio__img">
                     <img src="{% static item.img %}" alt="">
                     <div class="portfolio__link">
-                        <a href="{{item.details}}" class="portfolio__link-name">Ver Detalle</a>
+                        <a href="{{item.details}}" class="portfolio__link-name">{{item.detailsTitle}}</a>
                     </div>
                 </div>
                 {% endfor %}

@@ -13,10 +13,12 @@
 /*===== Colores =====*/
 
 :root {
-    --first-color: #5361FF;
+    --first-color: #2a3b47;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
+    --btn-color: #da2614;
+
 }
 
 
@@ -25,6 +27,7 @@
 :root {
     --body-font: 'Montserrat', sans-serif;
     --big-font-size: 5.80rem;
+    --med-font-size: 2.40rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -233,7 +236,7 @@ img {
 
 .home__title {
     align-self: flex-end;
-    font-size: var(--big-font-size);
+    font-size: var(--med-font-size);
     color: var(--white-color);
     line-height: .8;
 }
@@ -335,7 +338,7 @@ img {
 
 .read-more-btn {
     /* display: block; */
-    background-color: var(--first-color);
+    background-color: var(--btn-color);
     color: var(--white-color);
     padding: .75rem 2.5rem;
     margin-left: auto;
@@ -343,11 +346,12 @@ img {
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
+    font-weight: bold;
     cursor: pointer;
 }
 
 .google-btn {
-    background-color: var(--first-color);
+    background-color: var(--btn-color);
     color: var(--white-color);
     padding: .75rem 2.5rem;
     margin-left: auto;
@@ -355,6 +359,7 @@ img {
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
+    font-weight: bold;
     cursor: pointer;
     text-indent: 10px;
 }
@@ -428,7 +433,7 @@ img {
 .card .content .sub-title {
     font-size: 20px;
     font-weight: 600;
-    color: #5361FF;
+    color: #2a3b47;
     line-height: 20px;
 }
 
@@ -541,7 +546,7 @@ img {
 
 .contact__button {
     display: block;
-    background-color: var(--first-color);
+    background-color: var(--btn-color);
     color: var(--white-color);
     padding: .75rem 2.5rem;
     margin-left: auto;
@@ -549,6 +554,7 @@ img {
     border: none;
     outline: none;
     font-size: var(--normal-font-size);
+    font-weight: bold;
     cursor: pointer;
 }
 

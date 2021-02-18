@@ -14,6 +14,7 @@ class Post(models.Model):
     price = models.DecimalField(max_digits=7,decimal_places=2)
     img = models.CharField(max_length=500)
     details = models.CharField(max_length=500)
+    detailsTitle = models.CharField(max_length=500)
 
     def __str__(self):
         template = '{0.name} {0.desc} {0.price} {0.img}'
