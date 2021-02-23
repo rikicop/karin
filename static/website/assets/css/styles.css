@@ -694,3 +694,81 @@ img {
         margin-right: auto;
     }
 }
+
+/* Inmuebles */
+
+.inm-body{
+   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #112128;
+   
+}
+
+.inm-container{
+    margin-top: 10%;
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inm-container .inm-card{
+    position: relative;
+    max-width: 450;
+    background: #fff;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+} 
+
+.inm-container .inm-card .inm-imgBx{
+    
+    max-width: 250px;
+    flex: 0 0 250px;
+
+}
+
+.inm-container .inm-card .inm-imgBx img{
+    
+    /* max-width: 100%;  */
+
+    /* Esto de Abajo es para que estén del mismo tamaño  */
+
+    width: 350px;
+    height: 250px;
+    border-radius: 3%;   
+}
+
+.inm-container .inm-card .inm-content{
+    margin-left: 10px;
+}
+
+@media (max-width: 991px){
+   .inm-container{
+       flex-direction: column;
+   } 
+}
+
+@media (max-width: 768px){
+    .inm-container{
+        flex-direction: column;
+    } 
+    .inm-container .inm-card{
+        flex-direction: column;
+        max-width: 350px;
+    } 
+    .inm-container .inm-card .inm-imgBx{
+        
+        max-width: 100%;
+    }
+    .inm-container .inm-card .inm-content{
+        
+        margin-left: 0px ;
+    }  
+ }
+

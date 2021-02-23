@@ -26,3 +26,6 @@ def home(request):
  """
 def details(request):
     return render(request, 'details.html', {})
+
+def inmuebles(request):
+    return render(request, 'inmuebles.html', {})
