@@ -4,19 +4,19 @@
 {% block content %}
     
 <body class="inm-body">
-        
-   
     <div class="inm-container">
+        {% for inmueble in inmuebles %}
         <div class="inm-card">
             <div class="inm-imgBx">
-                <img src="https://dl.dropboxusercontent.com/s/2tmowdm9s0xc7dw/casa1.webp?dl=0" alt="imagen">
+                <img src="{{inmueble.img}}" alt="imagen">
             </div>
             <div class="inm-content">
-                <h2>Casa Uno</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores provident excepturi nemo assumenda in iusto. Aliquam pariatur impedit fugit ipsa corporis esse deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores provident excepturi nemo assumenda in iusto. Aliquam pariatur impedit fugit ipsa corporis esse deserunt!</p>
+                <h2>{{inmueble.name}}</h2>
+                <p>{{inmueble.desc}}</p>
             </div>
         </div>
-        <div class="inm-card">
+        {% endfor %}
+        <!-- <div class="inm-card">
             <div class="inm-imgBx">
                 <img src="https://dl.dropboxusercontent.com/s/yg8b7dhwcfl70ar/casa2.webp?dl=0" alt="imagen">
             </div>
@@ -51,7 +51,7 @@
                 <h2>Casa Cinco</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita asperiores provident excepturi nemo assumenda in iusto. Aliquam pariatur impedit fugit ipsa corporis esse deserunt!</p>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </body>

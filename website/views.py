@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Contact, Post, Equipo
+from .models import Contact, Post, Equipo, Inmuebles
     
 
 def home(request):
@@ -28,4 +28,5 @@ def details(request):
     return render(request, 'details.html', {})
 
 def inmuebles(request):
-    return render(request, 'inmuebles.html', {})
+    inmuebles = Inmuebles.objects.all()
+    return render(request, 'inmuebles.html', {'inmuebles':inmuebles})
