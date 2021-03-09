@@ -6,6 +6,7 @@
 <body class="inm-body">
     <div class="inm-container">
         {% for inmueble in inmuebles %}
+            {% if inmueble.tipo == 'Casa' %}
         <div class="inm-card">
             <div class="inm-imgBx">
                 <img src="{{inmueble.img}}" alt="imagen">
@@ -15,6 +16,7 @@
                 <p>{{inmueble.desc}}</p>
             </div>
         </div>
+        {% endif %}
         {% endfor %}
         <!-- <div class="inm-card">
             <div class="inm-imgBx">
